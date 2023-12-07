@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WikiProject.Domain\WikiProject.Domain.csproj" />
+    <ProjectReference Include="..\WikiProject.Infrastructure\WikiProject.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
