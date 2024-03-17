@@ -23,4 +23,8 @@
     <ProjectReference Include="..\WikiProject.Infrastructure\WikiProject.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\Item Images\" />
+  </ItemGroup>
+
 </Project>

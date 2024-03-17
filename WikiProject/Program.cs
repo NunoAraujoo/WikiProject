@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using WikiProject.Application.Common.Interfaces;
 using WikiProject.Infrastructure.Data;
+using WikiProject.Infrastructure.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,9 +11,8 @@ builder.Services.AddControllersWithViews();
 // Base de dados
 builder.Services.AddDbContext<ApplicationDbContext>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

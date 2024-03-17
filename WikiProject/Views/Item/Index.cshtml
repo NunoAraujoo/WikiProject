@@ -4,7 +4,7 @@
 <h1>Item List</h1>
 
 <div class="w-100 card border-0 p-4">
-    <div class="card-header bg-success bg-gradient m-lg-0 py-3">
+    <div class="card-header bg-brown bg-gradient m-lg-0 py-3">
         <div class="row">
             <div class="col-12 text-center">
                 <h2 class="text-white py-2">Item List</h2>
@@ -28,8 +28,13 @@
                 @foreach (var obj in Model)
                 {
                     <tr>
+                        <td>
+                            <img src="@obj.ImageUrl" width="150px" 
+                                 style="border-radius:5px; border: 1px, solid #bbb9b9; margin:0 auto" />
+                        </td>
                         <td>@obj.Name</td>
                         <td>@obj.Description</td>
+                      
                         <td>
                             <div class="w-75 btn-group" role="group">
                                 <a asp-controller="Item" asp-action="Update" asp-route-itemId="@obj.Id" class="btn btn-success mx-2">
@@ -50,9 +55,6 @@
             <div class="col-4 text-beggining">
                 <a asp-controller="Item" asp-action="Create" class="btn btn-secondary">
                     <i class="bi bi-plus-square"></i> Create New Item
-                </a>
-                <a asp-controller="Item" asp-action="" class="btn btn-secondary">
-                    <i class="bi bi-x-square"></i> Delete Item
                 </a>
             </div>
         </div>

@@ -1,5 +1,6 @@
-﻿using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Http;
 
 namespace WikiProject.Domain.Entities
 {
@@ -10,6 +11,9 @@ namespace WikiProject.Domain.Entities
         [MaxLength(20)]
         public required string Name { get; set; }
         public string? Description { get; set; }
+
+        [NotMapped]
+        public IFormFile? Image { get; set; }
 
         [Display(Name = "Image Url")]
         public string? ImageUrl { get; set; }

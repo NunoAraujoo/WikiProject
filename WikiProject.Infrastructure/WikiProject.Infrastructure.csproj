@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WikiProject.Application\WikiProject.Application.csproj" />
     <ProjectReference Include="..\WikiProject.Domain\WikiProject.Domain.csproj" />
   </ItemGroup>
 

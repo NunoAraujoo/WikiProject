@@ -20,3 +20,37 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.home-banner {
+    background-image: url(https://global.discourse-cdn.com/pocketgems/uploads/episodeinteractive/original/4X/8/9/8/8988e08dba054246b812503f8d3d627509b09ade.jpeg);
+    margin: 0;
+    background-size: cover;
+    background-position-y: -70rem;
+    background-position-x: 0rem;
+    height: 30rem;
+    width: 100%;
+}
+
+.home-banner .btn {
+    width: 30rem;
+}
+
+section div {
+    padding: 0 10rem;
+}
+
+.nav-link {
+    color: var(--link-color);
+}
+
+.navbar {
+    background-color: var(--bg-color-secondary);
+}
+
+.btn-primary {
+    background-color: var(--bg-color-secondary);
+}
+
+.bg-brown {
+    background-color: chocolate;
+}

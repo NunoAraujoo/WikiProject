@@ -4,12 +4,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WikiProject.Web", "WikiProject\WikiProject.Web.csproj", "{62D25861-FF93-4CCA-A4AD-D1DBEFE27DF8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E018E555-4608-489A-9ABA-CC28A4E35D4A} = {E018E555-4608-489A-9ABA-CC28A4E35D4A}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WikiProject.Domain", "WikiProject.Domain\WikiProject.Domain.csproj", "{2E94D119-9B05-4A08-A977-5C8F38FF7DD1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WikiProject.Application", "WikiProject.Application\WikiProject.Application.csproj", "{E018E555-4608-489A-9ABA-CC28A4E35D4A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2E94D119-9B05-4A08-A977-5C8F38FF7DD1} = {2E94D119-9B05-4A08-A977-5C8F38FF7DD1}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WikiProject.Infrastructure", "WikiProject.Infrastructure\WikiProject.Infrastructure.csproj", "{A6AEDEC6-3DBD-4A1D-823B-54413C8FD452}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E018E555-4608-489A-9ABA-CC28A4E35D4A} = {E018E555-4608-489A-9ABA-CC28A4E35D4A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
